@@ -12,7 +12,7 @@ export default {
         dynamic() {
             // Get the template name from the wordpress config
             const templatePath = templates?.[this.template] || 'Default.vue'
-
+            console.log(templatePath)
             // Import the template
             /* return async () => await import(templatePath) */
             return async () => await import(`./${templatePath}`)

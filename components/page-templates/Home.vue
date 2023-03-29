@@ -2,12 +2,17 @@
 <template>
     <main>
         <h1>Home</h1>
-        <div v-html="page.content.rendered" />
+        <HeroHome :acf="page.acf?.home_hero" />
     </main>
 </template>
   
 <script>
+import HeroHome from '../Hero/HeroHome.vue'
+
 export default {
-    props: ['page']
+    props: ['page'],
+    components: {
+        HeroHome
+    },
 }
 </script>
