@@ -1,0 +1,14 @@
+/* 
+* ACTION TYPES
+*/
+export const FETCH_MAIN_MENU = 'FETCH_MAIN_MENU'
+
+
+/* 
+* MUTATION TYPES
+*/
+export const SET_MAIN_MENU = 'SET_MAIN_MENU'
+
+/* 
+* GETTER TYPES
+*/
