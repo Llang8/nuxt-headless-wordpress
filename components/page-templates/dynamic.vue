@@ -1,22 +1,14 @@
 <template>
-    <component :is="dynamic" :page="page" />
+    <main>
+        <component v-for="section in page.acf?.content" :key="section._key" :acf="section" :is="section.acf_fc_layout" />
+    </main>
 </template>
 
 <script>
-// Import wordpress config
-import { templates } from '~/wordpress.config.js'
-
 export default {
-    props: ['template', 'page'],
-    computed: {
-        dynamic() {
-            // Get the template name from the wordpress config
-            const templatePath = templates?.[this.template] || 'Default.vue'
-            console.log(templatePath)
-            // Import the template
-            /* return async () => await import(templatePath) */
-            return async () => await import(`./${templatePath}`)
-        }
+    props: ['page'],
+    created() {
+        console.log(this.page)
     }
 }
 </script>
