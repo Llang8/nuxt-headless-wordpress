@@ -1,6 +1,6 @@
 <template>
     <header>
-        <nav class="lg:container mx-auto flex justify-between items-center py-8">
+        <nav class="md:container mx-auto flex justify-between items-center py-8">
             <div>
                 <img src="https://via.placeholder.com/150x80" alt="">
             </div>

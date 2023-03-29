@@ -1,5 +1,5 @@
 <template>
-    <section class="lg:container mx-auto py-24" :style="sectionStyles">
+    <section class="md:container mx-auto py-24" :style="sectionStyles">
         <component :videoUrl="acf.video_url" :content="acf.content" :is="videoLayout" />
     </section>
 </template>

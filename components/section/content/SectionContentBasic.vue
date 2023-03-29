@@ -1,5 +1,5 @@
 <template>
-    <section class="lg:container mx-auto py-24 section-content-basic">
+    <section class="md:container mx-auto py-24 section-content-basic">
         <div v-html="acf.body"></div>
     </section>
 </template>

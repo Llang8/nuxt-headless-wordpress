@@ -7,3 +7,7 @@
 p {
     @apply mt-4;
 }
+
+h1 {
+    @apply text-3xl font-bold;
+}

@@ -1,6 +1,6 @@
 <template>
     <section class="py-24 section-content-colored" :style="sectionStyles">
-        <div class="lg:container mx-auto" v-html="acf.body"></div>
+        <div class="md:container mx-auto" v-html="acf.body"></div>
     </section>
 </template>
 
