@@ -40,7 +40,7 @@ export default {
     '@nuxtjs/tailwindcss'
   ],
   env: {
-    headlessUrl: process.env.HEADLESS_URL || 'http://localhost:3000'
+    headlessUrl: process.env.HEADLESS_URL || 'http://localhost:3000/'
   }, 
   /*
   ** Nuxt.js modules
@@ -70,6 +70,17 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+    }
+  },
+  generate: {
+    routes: function () {
+      const axios = require('axios')
+      return axios.get(`${process.env.HEADLESS_URL}wp-json/wp/v2/pages`)
+        .then((res) => {
+          return res.data.map((page) => {
+            return page.slug
+          })
+        })
     }
   }
 }
