@@ -1,7 +1,9 @@
 <template>
-    <section class="md:container mx-auto py-24" :style="sectionStyles">
-        <component :videoUrl="acf.video_url" :content="acf.content" :is="videoLayout" />
-    </section>
+    <SectionWrapper :acf="acf">
+        <SectionContainerLarge :acf="acf">
+            <component :videoUrl="acf.video_url" :content="acf.content" :is="videoLayout" />
+        </SectionContainerLarge>
+    </SectionWrapper>
 </template>
 
 <script>

@@ -1,7 +1,9 @@
 <template>
-    <section class="md:container mx-auto py-24 section-content-basic">
-        <div v-html="acf.body"></div>
-    </section>
+    <SectionWrapper :acf="acf">
+        <SectionContainer :acf="acf">
+            <div v-html="acf.body"></div>
+        </SectionContainer>
+    </SectionWrapper>
 </template>
 
 <script>

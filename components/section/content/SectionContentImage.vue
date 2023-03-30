@@ -1,7 +1,9 @@
 <template>
-    <section class="md:container mx-auto py-24" :style="sectionStyles">
-        <component :imageUrl="acf.image.url" :imageAlt="acf.image.alt" :content="acf.content" :is="imageLayout" />
-    </section>
+    <SectionWrapper :acf="acf">
+        <SectionContainerLarge :acf="acf">
+            <component :imageUrl="acf.image.url" :imageAlt="acf.image.alt" :content="acf.content" :is="imageLayout" />
+        </SectionContainerLarge>
+    </SectionWrapper>
 </template>
 
 <script>

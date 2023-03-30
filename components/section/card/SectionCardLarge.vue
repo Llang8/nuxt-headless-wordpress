@@ -1,9 +1,11 @@
 <template>
-    <section :style="sectionStyles">
-        <div class="max-w-[70rem] w-full mx-auto py-24">
-            <component :imageUrl="acf.image.url" :content="acf.content" :is="cardLayout" />
-        </div>
-    </section>
+    <SectionWrapper :acf="acf">
+        <SectionContainer :acf="acf">
+            <div class="max-w-[70rem] w-full mx-auto py-24">
+                <component :imageUrl="acf.image.url" :content="acf.content" :is="cardLayout" />
+            </div>
+        </SectionContainer>
+    </SectionWrapper>
 </template>
 
 <script>
