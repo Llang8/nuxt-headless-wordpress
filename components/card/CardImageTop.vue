@@ -7,14 +7,14 @@
     <div
       class="border-r border-b border-l border-gray-400 lg:border-gray-400 bg-white rounded rounded-t-none p-8 flex flex-col justify-between leading-normal"
     >
-      <div v-html="content"></div>
+      <ContentText :body="content" :button="button" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["imageUrl", "content"],
+  props: ["imageUrl", "content", "button"],
   computed: {
     imageBg() {
       return {

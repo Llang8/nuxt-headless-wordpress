@@ -2,7 +2,7 @@
     <div>
         <div v-html="body"></div>
         <Button v-if="button?.link && button?.text" 
-            :intent="button.intent" 
+            :intent="button.theme" 
             :size="button.size"  
             :to="buttonTo"
             :align="button.align"

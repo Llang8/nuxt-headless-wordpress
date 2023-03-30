@@ -8,7 +8,7 @@
       :target="href ? '_blank' : ''"
       @click="$emit('click')"
     >
-      <slot></slot>
+      <slot />
     </component>
   </div>
 </template>
@@ -35,19 +35,16 @@ export default {
         variants: {
           intent: {
             primary: [
-              "bg-primary",
+              "bg-primary-default",
               "text-white",
               "border-transparent",
               "hover:bg-primary-dark",
             ],
             secondary: [
-              "bg-white",
-              "text-black",
-              "border-gray-400",
-              "hover:bg-gray-100",
-              "border-solid",
-              "border-2",
-              "border-gray-800",
+              "bg-secondary-default",
+              "text-white",
+              "border-transparent",
+              "hover:bg-secondary-dark",
             ],
             text: ["bg-transparent", "text-black", "hover:bg-gray-100"],
           },

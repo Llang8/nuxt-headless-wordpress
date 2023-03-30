@@ -9,7 +9,7 @@
                 </div>
             </nav>
             <p class="mt-8 text-center text-base text-gray-600">
-                &copy; 2023 Example LLC. All rights reserved.
+                &copy; 2023 Clean & Fresh LLC. All rights reserved.
             </p>
         </div>
     </footer>

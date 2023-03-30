@@ -1,7 +1,7 @@
 <template>
     <SectionWrapper :acf="acf">
         <SectionContainerLarge :acf="acf">
-            <component :imageUrl="acf.image.url" :imageAlt="acf.image.alt" :content="acf.content" :is="imageLayout" />
+            <component :imageUrl="acf.image.url" :imageAlt="acf.image.alt" :content="acf.content" :button="acf.button" :is="imageLayout" />
         </SectionContainerLarge>
     </SectionWrapper>
 </template>

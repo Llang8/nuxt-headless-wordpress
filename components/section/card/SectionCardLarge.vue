@@ -1,8 +1,8 @@
 <template>
     <SectionWrapper :acf="acf">
         <SectionContainer :acf="acf">
-            <div class="max-w-[70rem] w-full mx-auto py-24">
-                <component :imageUrl="acf.image.url" :content="acf.content" :is="cardLayout" />
+            <div class="max-w-[70rem] w-full mx-auto">
+                <component :imageUrl="acf.image.url" :content="acf.content" :button="acf.button" :is="cardLayout" />
             </div>
         </SectionContainer>
     </SectionWrapper>

@@ -1,7 +1,7 @@
 <template>
     <SectionWrapper :acf="acf">
         <SectionContainerLarge :acf="acf">
-            <component :videoUrl="acf.video_url" :content="acf.content" :is="videoLayout" />
+            <component :videoUrl="acf.video_url" :content="acf.content" :button="acf.button" :is="videoLayout" />
         </SectionContainerLarge>
     </SectionWrapper>
 </template>
