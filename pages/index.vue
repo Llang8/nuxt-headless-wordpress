@@ -1,15 +1,12 @@
 <!-- Default WordPress page content -->
 <template>
-    <dynamic :page="page" />
+    <main>
+        <component v-for="section in page.acf?.content" :key="section._key" :acf="section" :is="section.acf_fc_layout" />
+    </main>
 </template>
 
 <script>
-import dynamic from '~/components/page-templates/dynamic.vue'
-
 export default {
-    components: {
-        dynamic
-    },
     async asyncData({ params, $axios }) {
         const page = await $axios.$get(`/wp-json/headless/v1/frontpage`)
 
