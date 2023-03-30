@@ -12,12 +12,6 @@ export default {
     computed: {
         imageLayout() {
             return this.acf.image_position
-        },
-        sectionStyles() {
-            return {
-                backgroundColor: this.acf.background_color || '#fff',
-                color: this.acf.text_color || '#000'
-            }
         }
     }
 }

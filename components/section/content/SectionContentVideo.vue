@@ -12,12 +12,6 @@ export default {
     computed: {
         videoLayout() {
             return this.acf.video_position
-        },
-        sectionStyles() {
-            return {
-                backgroundColor: this.acf.background_color || '#fff',
-                color: this.acf.text_color || '#000'
-            }
         }
     }
 }
