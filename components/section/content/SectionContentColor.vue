@@ -1,7 +1,7 @@
 <template>
     <SectionWrapper :acf="acf">
         <SectionContainer :acf="acf">
-            <div v-html="acf.body"></div>
+            <ContentText :body="acf.body" :button="acf.button" />
         </SectionContainer>
     </SectionWrapper>
 </template>

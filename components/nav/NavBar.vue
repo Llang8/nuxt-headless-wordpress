@@ -1,9 +1,9 @@
 <template>
     <header>
         <nav class="md:container mx-auto flex justify-between items-center py-8">
-            <div>
+            <nuxt-link to="/">
                 <img src="https://via.placeholder.com/150x80" alt="">
-            </div>
+            </nuxt-link>
             <ul class="flex items-center gap-8" v-if="mainMenu.length">
                 <NavLink v-for="item in mainMenu" :key="item.link?.ID" :item="item" />
             </ul>

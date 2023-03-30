@@ -1,12 +1,12 @@
 <template>
     <div class="grid grid-cols-2 gap-12">
-        <div v-html="content"></div>
+        <ContentText :body="content" :button="button" />
         <ContentImageResponsive :imageUrl="imageUrl" :imageAlt="imageAlt" />
     </div>
 </template>
 
 <script>
 export default {
-    props: ['imageUrl', 'imageAlt', 'content']
+    props: ['imageUrl', 'imageAlt', 'content', 'button']
 }
 </script>
