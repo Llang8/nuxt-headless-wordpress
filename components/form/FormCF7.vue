@@ -41,7 +41,7 @@ export default {
                     
                     try {
                         const response = await this.$axios.$post(
-                            `/wp-json/contact-form-7/v1/contact-forms/${this.acf.form.ID}/feedback`, 
+                            `/wp-json/contact-form-7/v1/contact-forms/${this.form.ID}/feedback`, 
                             formData
                         )
     
